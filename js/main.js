@@ -1,7 +1,9 @@
 
 
-function onBallClick(){
+function onBallClick(elBall) {
 
-    console.log('You clicked the ball')
+    elBall.style.width += '150px'
+    elBall.style.height += '150px'
+    elBall.innerText = '150'
 
 }
