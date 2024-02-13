@@ -1,9 +1,24 @@
 
 
 function onBallClick(elBall) {
+    var currWidthBall = elBall.offsetWidth
+    var currHeightBall = elBall.offsetHeight
 
-    elBall.style.width += '150px'
-    elBall.style.height += '150px'
-    elBall.innerText = '150'
+    var newWidthBall = currWidthBall + 50
+    var newHeightBall = currHeightBall + 50
+
+    elBall.style.width = newWidthBall + 'px'
+    elBall.style.height = newHeightBall + 'px'
+
+    console.log(newHeightBall)
+
+    if (newHeightBall > 400 && newWidthBall > 400) {
+        elBall.style.width = 100 + 'px'
+        elBall.style.height = 100 + 'px'
+
+    }
+
+
+    elBall.innerText = newHeightBall
 
 }
