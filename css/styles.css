@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
 }
 
@@ -6,10 +6,17 @@ h1 {
     color: white;
 }
 
-.ball{
+.ball {
     height: 100px;
     width: 100px;
     background-color: red;
     border-radius: 50%;
     margin: auto;
+}
+
+div.ball {
+    display: grid;
+    font-size: 22px;
+    font-weight: bold;
+    place-content: center;
 }
